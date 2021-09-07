@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 from Logger import Logger
 from sklearn.ensemble import RandomForestClassifier
-from xgboost import XGBClassifier
+#from xgboost import XGBClassifier
 from connect_database import insert_newdata,read_data,display
 
 
