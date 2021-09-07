@@ -29,10 +29,10 @@ def predict_function(features):
     logger.log_operations('INFO', 'Done with prediction')
     return result[0]
 
-@app.route('/submit',methods=['GET','POST'])
+@app.route('/submit',methods=['POST'])
 def submit():
     if request.method=='POST':
-        try:
+        
             inv=(float(request.form['national_inv']))
 
             lead_time=(float(request.form['time']))
@@ -71,9 +71,7 @@ def submit():
                 prediction = prediction+'Not a Back Order'
 
             return render_template('index.html',prediction=prediction)
-        except:
-            return 'ERROR--->Please print integer/float values'
-
+        
 
 
 if __name__=='__main__':
