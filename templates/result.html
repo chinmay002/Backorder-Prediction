@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<style>
+table,th,
+td {
+border: 1px solid black;
+}
+</style>
+<body>
+<table>
+<tr>
+<th>ID</th>
+<th>national_inv</th>
+<th>lead_time</th>
+<th>qty</th>
+<th>forecast</th>
+<th>sales</th>
+<th>min_bank</th>
+<th>performance</th>
+<th>dec_risk</th>>
+</tr>
+{% for all in all_data %}
+<tr>
+<td>{{all['_id']}}</td>
+<td>{{ all['national_inv'] }}</td>
+<td>{{ all['lead_time'] }}</td>
+<td>{{ all['in_transit_qty'] }}</td>
+<td>{{ all['forecast_9_month'] }}</td>
+<td>{{ all['sales_9_month'] }}</td>
+<td>{{ all['min_bank'] }}</td>
+<td>{{ all['perf_12_month_avg'] }}</td>
+    <td>{{ all['deck_risk'] }}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</head>
+</html>

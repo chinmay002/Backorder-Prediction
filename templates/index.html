@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>BACORDER</title>
+<style>
+
+body {
+  background:#5eb2b3;
+  background-attachment: fixed;
+  text-align:centre;}
+
+
+
+input{
+  background-color:lightgrey;
+  width:80px;
+  border:2px solid black;
+  border-radius:5px;
+  margin-left:50px;
+  margin-top:10px;
+}
+
+label{
+  text-align:justify;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px black;
+  margin-left:50px;
+  margin-top:100px;
+  margin-bottom:100px;
+  }
+
+
+h1.center{
+  text-align:center;
+  font-family:courier;}
+
+select {
+   width: 20%;
+   border-radius:10px;
+   background-color: #f1f1f1;
+   margin-left:50px;
+   margin-top:10px;}
+
+.column {
+  float: left;
+  width: 50%;}
+
+.button{
+  width:100px;
+  text-align: center;
+  margin:10%;  }
+
+.form-v5-content{
+    padding:50px;
+    background:white;
+    width:30%;
+    margin:auto;
+    resize:both;
+    overflow:auto;
+    height:500px;
+    }
+.result{
+   color:black;
+    text-align: left;
+    font-size:20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+   }
+
+</style>
+
+<h1 class="center">Welcome to Backorder_Prediction</h1>
+
+</head>
+<body>
+    <div class="form-v5-content">
+        <form action="/submit" method="POST">
+
+             <div class="row">
+                 <div class="column">
+                    <label for="national_inv">National_inv:</label><br>
+                    <input type="text" id="national_inv" name="national_inv" value="0"><br><br><br>
+                 </div>
+                 <div class="column"  >
+                    <label for="time">Lead_time:</label><br>
+                     <input type="text" id="time" name="time" value="0"><br><br><br>
+                 </div>
+             </div>
+             <br>
+             <br>
+                 <div class="row" >
+                     <div class="column">
+                         <label for="qty">in_transit_qty:</label><br>
+                         <input type="text" id="qty" name="qty" value="0"><br><br><br>
+                     </div>
+
+                     <div class="column">
+                         <label for="forecast_9_month">forecast_9_month:</label><br>
+                        <input type="text" id="forecast_9_month" name="forecast_9_month" value="0"><br><br><br>
+                     </div>
+
+                 </div>
+                <br>
+                <div class="row">
+                     <div class="column">
+                          <label for="sales_9_month">sales_9_month:</label><br>
+                          <input type="text" id="sales_9_month" name="sales_9_month" value="0"><br><br><br>
+                     </div>
+                     <div class="column">
+                          <label for="bnk">Min_bank:</label><br>
+                         <input type="text" id="bnk" name="bnk" value="0"><br><br><br>
+                     </div>
+                 </div>
+
+               <div class="row">
+                  <div class="column">
+                        <label for="performance">Past_Performance:</label><br>
+                        <input type="text" id="performance" name="performance" value="0"><br><br><br>
+                  </div>
+                   <div class="column">
+                       <label for="risk">Deck_Risk:</label><br>
+                        <select  id="risk" name="risk">
+                        <option value="0">NO</option>
+                        <option value="1">Yes</option>
+                        </select>
+                   </div><br><br><br>
+               </div>
+
+            <input  type="submit" value="Submit"  style='width:100px;margin:0 50%;position:relative;left:-50px;'>
+        </form><br><br><br>
+
+
+
+        <h1 class="result"> {{prediction}}</h1>
+    </div>
+
+
+
+
+</body>
+</html>
