@@ -32,6 +32,8 @@ def predict_function(features):
 @app.route('/submit',methods=['POST'])
 def submit():
     if request.method=='POST':
+             
+        try:
         
             inv=(float(request.form['national_inv']))
 
@@ -71,7 +73,7 @@ def submit():
                 prediction = prediction+'Not a Back Order'
 
             return render_template('index.html',prediction=prediction)
-        
+        return ('ERROR----> PLEASE ENTER ONLY INTEGER VALUES ')
 
 
 if __name__=='__main__':
