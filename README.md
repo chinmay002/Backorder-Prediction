@@ -20,6 +20,15 @@ going into backorder (Yes or No).
 8.   After that I applied hyper-parameter tuning on all model which I have described above. Here also I got highest accuracy of 98% on test dataset by same    RandomForrestRegression.
 9. After that I saved my model in pickle file format for model deployment.
 10. After that my model was ready to deploy. I deployed this model on variouscloud storage( heroku)
+# Technology Used
+1. Python 
+2. Sklearn
+3. Flask
+4. Html
+5. Css
+6. Pandas, Numpy 
+7. Database 
+
 
 # Output
 ![op](https://user-images.githubusercontent.com/60249099/132537128-63f2fa51-cef1-4041-8bec-b831ffe40c04.PNG)
