@@ -24,7 +24,7 @@ def home():
 def predict_function(features):
     to_predict = np.array(features).reshape(1,8)
     logger.log_operations('INFO','Loaded the pickle file')
-    load_model = pickle.load(open("rf.pkl",'rb'))
+    load_model = pickle.load(open("rf_1.pkl",'rb'))
     result = load_model.predict(to_predict)
     logger.log_operations('INFO', 'Done with prediction')
     return result[0]
