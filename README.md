@@ -9,7 +9,7 @@ Based on past data from inventories, supply chain, and sales, classify the produ
 going into backorder (Yes or No).
 
 # Process Flow
-1.  First we cleaned our dataset properly by removing all null value and duplicate value present in dataset.
+1.   First we cleaned our dataset properly by removing all null value and duplicate value present in dataset.
 2.   Performed EDA on whole data set. Did type conversion of some columns .Tried to find the pattern
 3.   Then I handled categorical variable by performing One-Hot encoding.
 4.   With the help of Correlation plot we found that Sales(3,6,9 month), Forecast(3,6,9) and Performance(6,9) columns were heavily correlated.Hence dropped some columns from those
@@ -17,9 +17,12 @@ going into backorder (Yes or No).
 6.   Then I split the hole data set train-test split. After that I performed scaling on X_train and X_test
 7.   After performing above step I was ready for model training. In this step, I trained my dataset on different algorithm(Logistic, Random-Forest, SVM,
      DecisionTreeRegression,Random-Forest and XGB). After training the dataset on different algorithms I got highest accuracy of 97% on RandomForrestRegression.
-8.   After that I applied hyper-parameter tuning on all model which I have described above. Here also I got highest accuracy of 98% on test dataset by same    RandomForrestRegression.
-9. After that I saved my model in pickle file format for model deployment.
-10. After that my model was ready to deploy. I deployed this model on variouscloud storage( heroku)
+8.   After that I applied hyper-parameter tuning on all model which I have described above. Here also I got highest accuracy of 98% on test dataset by same   
+9.   After that I saved my model in pickle file format for model deployment.
+10.  After that my model was ready to deploy. I deployed this model on variouscloud storage( heroku)
+
+
+
 # Technology Used
 1. Python 
 2. Sklearn
@@ -28,6 +31,13 @@ going into backorder (Yes or No).
 5. Css
 6. Pandas, Numpy 
 7. Database 
+
+# How to run this app    
+  Code is written in Python 3.9. If you don't have python installed on your system, click here https://www.python.org/downloads/ to install.
+  Create virtual environment - conda create -n myenv python=3.9
+  Activate the environment - conda activate myenv
+  Install the packages - pip install -r requirements.txt
+  Run the app - python app.py
 
 
 # Output
