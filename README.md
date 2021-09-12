@@ -33,11 +33,11 @@ going into backorder (Yes or No).
 7. Database 
 
 # How to run this app    
-  Code is written in Python 3.9. If you don't have python installed on your system, click here https://www.python.org/downloads/ to install.
-  Create virtual environment - conda create -n myenv python=3.9
-  Activate the environment - conda activate myenv
-  Install the packages - pip install -r requirements.txt
-  Run the app - python app.py
+1.  Code is written in Python 3.9. If you don't have python installed on your system, click here https://www.python.org/downloads/ to install.
+2.  Create virtual environment - conda create -n myenv python=3.9
+3.  Activate the environment - conda activate myenv
+4.  Install the packages - pip install -r requirements.txt
+5.  Run the app - python app.py
 
 
 # Output
