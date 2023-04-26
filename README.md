@@ -16,8 +16,8 @@ going into backorder (Yes or No).
 5.   Since data was highly imbalance, performed sampling on data
 6.   Then I split the hole data set train-test split. After that I performed scaling on X_train and X_test
 7.   After performing above step I was ready for model training. In this step, I trained my dataset on different algorithm(Logistic, Random-Forest, SVM,
-     DecisionTreeRegression,Random-Forest and XGB). After training the dataset on different algorithms I got highest accuracy of 97% on RandomForrestRegression.
-8.   After that I applied hyper-parameter tuning on all model which I have described above. Here also I got highest accuracy of 98% on test dataset by same   
+     DecisionTreeRegression,Random-Forest and XGB). After training the dataset on different algorithms I got highest accuracy of 83% on XGB Classifier.
+8.   After that I applied hyper-parameter tuning on all model which I have described above. 
 9.   After that I saved my model in pickle file format for model deployment.
 10.  After that my model was ready to deploy. I deployed this model on variouscloud storage( heroku)
 
