@@ -47,7 +47,7 @@ going into backorder (Yes or No).
 ![db](https://user-images.githubusercontent.com/60249099/132537356-fd9a07fe-40ef-4c3c-be38-96150532a8eb.PNG)
 
 
-# Heroku Deployment Link:
+# Heroku Deployment Link:(Sorry!! Since Herko removed free tier , this link wont work.)
 https://backorder1.herokuapp.com/
 
 # Linkedin
